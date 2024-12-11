@@ -11,7 +11,7 @@ resource "aws_s3_bucket" "dev_s3" {
     yor_trace   = "c29c183f-8053-4376-9013-e5e8d3a91830"
   }
 }
-
+## commenting for testing
 resource "aws_s3_bucket_ownership_controls" "dev_s3" {
   bucket = aws_s3_bucket.dev_s3.id
   rule {
