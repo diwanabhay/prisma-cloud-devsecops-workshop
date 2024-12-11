@@ -6,9 +6,16 @@ resource "aws_s3_bucket" "dev_s3" {
   bucket_prefix = "dev-"
 
   tags = {
-    Environment = "Dev"
-    yor_name    = "dev_s3"
-    yor_trace   = "c29c183f-8053-4376-9013-e5e8d3a91830"
+    Environment          = "Dev"
+    yor_name             = "dev_s3"
+    yor_trace            = "c29c183f-8053-4376-9013-e5e8d3a91830"
+    git_commit           = "93ceaa942a03e6a0b7c2214dc52f655715ebf75b"
+    git_file             = "code/build/s3.tf"
+    git_last_modified_at = "2024-12-11 17:38:03"
+    git_last_modified_by = "diwaabha@amazon.com"
+    git_modifiers        = "diwaabha"
+    git_org              = "diwanabhay"
+    git_repo             = "prisma-cloud-devsecops-workshop"
   }
 }
 ## commenting for testing
